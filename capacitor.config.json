@@ -1,0 +1,10 @@
+{
+  "appId": "com.example.dswd_frontend_benefeciary",
+  "appName": "Poofsa",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "url": "https://dswd-benefeciary-uat.vercel.app",
+    "cleartext": true
+  }
+}
