@@ -128,8 +128,8 @@ export default {
                 await this.benefeciaryStore.fetchReleasingCashStore();
                 this.releasingCashData = this.benefeciaryStore.releasingCashBenef;
                 if (this.releasingCashData && this.releasingCashData.length > 0) {
-                    this.handOverEventID = this.releasingCashData[0].hand_over_event_id;
-                    this.handOverStatusID = this.releasingCashData[0].hand_over_status_id;
+                    this.handOverEventID = Number(this.releasingCashData[0].hand_over_event_id);
+                    this.handOverStatusID = Number(this.releasingCashData[0].hand_over_status_id);
                     this.dateOfHandOver = this.releasingCashData[0].hand_over_date;
                     this.coordinatedPersonnel = this.releasingCashData[0].coordinator;
                     this.designatedVenue = this.releasingCashData[0].venue;
