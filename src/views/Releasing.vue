@@ -90,7 +90,7 @@ export default {
         return {
             releasingCashData: '',
             handOverEventID: '',
-            handOverSatusID: '',
+            handOverStatusID: '',
             dateOfHandOver: '',
             coordinatedPersonnel: '',
             designatedVenue: '',
@@ -129,7 +129,7 @@ export default {
                 this.releasingCashData = this.benefeciaryStore.releasingCashBenef;
                 if (this.releasingCashData && this.releasingCashData.length > 0) {
                     this.handOverEventID = this.releasingCashData[0].hand_over_event_id;
-                    this.handOverSatusID = this.releasingCashData[0].hand_over_status_id;
+                    this.handOverStatusID = this.releasingCashData[0].hand_over_status_id;
                     this.dateOfHandOver = this.releasingCashData[0].hand_over_date;
                     this.coordinatedPersonnel = this.releasingCashData[0].coordinator;
                     this.designatedVenue = this.releasingCashData[0].venue;
